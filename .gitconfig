@@ -1,0 +1,11 @@
+[user]
+	name = chanheej
+	email = jch0220@gmail.com
+[alias]
+	show-graph = log --graph --abbrev-commit --pretty=oneline
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
