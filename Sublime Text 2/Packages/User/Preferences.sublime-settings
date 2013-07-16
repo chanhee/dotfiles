@@ -1,0 +1,11 @@
+{
+	"bold_folder_labels": true,
+	"font_face": "TheSansMonoCondensed",
+	"font_size": 13,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"translate_tabs_to_spaces": true
+}

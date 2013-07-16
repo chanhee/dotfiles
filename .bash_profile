@@ -1,8 +1,11 @@
 alias sublime='open -a "Sublime Text 2"'
 alias ls='ls -alvGF'
 
-
-
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+source $(brew --prefix)/etc/bash_completion.d/brew_bash_completion.sh
 # define colors
 c_black=`tput setaf 0`
 c_red=`tput bold;tput setaf 1`
@@ -18,7 +21,7 @@ show_repository()
   echo -e "$(VCPROMPT_FORMAT=($(tput bold;tput setaf 3)%P$(tput sgr0)@$(tput bold;tput setaf 6)%b$(tput setaf 5)%u$(tput bold;tput setaf 1)%a$(tput bold;tput setaf 2)%m$(tput sgr0)) vcprompt)"
 }
 
-PS1='\[${c_green}\]\w\[${c_sgr0}\] $(show_repository) \n\[${c_yellow}\]\$\[${c_sgr0}\] '
+PS1='\[${c_green}\]\w\[${c_sgr0}\] $(show_repository)\n\[${c_yellow}\]\$\[${c_sgr0}\] '
 
 # show_repository ()
 # {
