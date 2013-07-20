@@ -1,11 +1,21 @@
 [user]
-	name = chanheej
+	name = chanhee
 	email = jch0220@gmail.com
 [alias]
-	show-graph = log --graph --abbrev-commit --pretty=oneline
+    ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
 	ui = auto
+[core]
+    excludesfile = /Users/zero/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[credential]
+    helper = osxkeychain

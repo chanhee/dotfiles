@@ -1,4 +1,4 @@
-alias sublime='open -a "Sublime Text 2"'
+alias sublime='open -a "Sublime Text"'
 alias ls='ls -alvGF'
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

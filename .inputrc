@@ -1,1 +1,5 @@
 set completion-ignore-case on
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[1;5H": beginning-of-line
+"\e[1;5F": end-of-line
