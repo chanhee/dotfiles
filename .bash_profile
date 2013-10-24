@@ -1,3 +1,5 @@
+shopt -s dotglob
+shopt -s nocaseglob
 alias sublime='open -a "Sublime Text"'
 alias ls='ls -alvGF'
 
