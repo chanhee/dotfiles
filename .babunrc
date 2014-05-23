@@ -1,0 +1,16 @@
+alias ll='ls -alvGF'
+alias open='explorer'
+
+c_black=`tput setaf 0`
+c_red=`tput bold;tput setaf 1`
+c_green=`tput bold;tput setaf 2`
+c_yellow=`tput bold;tput setaf 3`
+c_blue=`tput bold;tput setaf 4`
+c_pink=`tput bold;tput setaf 5`
+c_cyan=`tput bold;tput setaf 6`
+c_sgr0=`tput sgr0`
+
+PS1="\[${c_green}\]\W/\[${c_sgr0}\] \[${c_yellow}\]\$( git rev-parse --abbrev-ref HEAD 2> /dev/null || echo "" )\[${c_sgr0}\] \n\[${c_yellow}\]\$\[${c_sgr0}\] "
+
+export CLICOLOR=1
+export LSCOLORS=CxFxBxDxGxegedabagacad
